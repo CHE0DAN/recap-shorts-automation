@@ -1,0 +1,7 @@
+{"query":{"pages":{
+"1":{"index":1,"title":"File:Fake A.jpg","imageinfo":[{"url":"https://upload.example/a.jpg","thumburl":"https://upload.example/thumb/a.jpg","descriptionurl":"https://commons.example/wiki/File:Fake_A.jpg","width":4000,"height":3000,"mime":"image/jpeg","extmetadata":{"LicenseShortName":{"value":"CC BY-SA 4.0"},"LicenseUrl":{"value":"https://creativecommons.org/licenses/by-sa/4.0"},"Artist":{"value":"<a href=\"//x\">홍 길동</a> &amp; 친구"}}}]},
+"2":{"index":2,"title":"File:Fake B.jpg","imageinfo":[{"url":"https://upload.example/b.jpg","descriptionurl":"https://commons.example/wiki/File:Fake_B.jpg","width":800,"height":600,"mime":"image/jpeg","extmetadata":{"LicenseShortName":{"value":"CC BY-NC 4.0"},"Artist":{"value":"누군가"}}}]},
+"3":{"index":3,"title":"File:Fake C.png","imageinfo":[{"url":"https://upload.example/c.png","descriptionurl":"https://commons.example/wiki/File:Fake_C.png","width":800,"height":600,"mime":"image/png","extmetadata":{"LicenseShortName":{"value":"Public domain"},"Artist":{"value":""}}}]},
+"4":{"index":4,"title":"File:Fake D.svg","imageinfo":[{"url":"https://upload.example/d.svg","descriptionurl":"https://commons.example/wiki/File:Fake_D.svg","width":100,"height":100,"mime":"image/svg+xml","extmetadata":{"LicenseShortName":{"value":"CC0"}}}]},
+"5":{"index":5,"title":"File:Fake E.jpg","imageinfo":[{"url":"https://upload.example/e.jpg","descriptionurl":"https://commons.example/wiki/File:Fake_E.jpg","width":800,"height":600,"mime":"image/jpeg","extmetadata":{"LicenseShortName":{"value":"Fair use"}}}]}
+}}}

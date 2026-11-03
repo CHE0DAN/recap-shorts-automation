@@ -1,0 +1,46 @@
+{
+  "_doc": "효과음 저작권 위험도(경고용). assets_local 은 커밋하지 않으므로 효과음 꾸러미의 manifest 와 따로, 항목 id 로 여기에 적어 둔다. 쓰는 곳: recap_shorts/fx/rights.py — 검수 화면 경고(review.json 의 sfx_rights), 고르기 회피(config/fx.json sfx.avoid_rights_risk, 기본 끔), 목록 보기(python -m recap_shorts.fx rights).",
+  "version": 1,
+  "basis": "원본 파일 이름(manifest 의 source_file)만 보고 사람이 매긴 판단이다. 소리 지문(Content ID 등)으로 대조한 것이 아니다 — low 라도 안전하다는 보증이 아니고, high 라도 실제로 신고되는지는 모른다.",
+  "pack": "user_meme",
+  "_note_pack": "pack = 이 기록이 적용되는 효과음 폴더 이름(assets_local/sfx/user_meme). 합성음 폴더(assets/sfx)에도 boing_01·boom_01 같은 같은 id 가 있어서, 다른 폴더의 소리는 점검 대상이 아니다(경고도 회피도 없음).",
+  "levels": {
+    "high": "권리자가 분명한 소리(게임·상표·노래·특정 영상에서 잘라 낸 것). 유튜브 저작권 신고·Content ID·수익 창출 제한에 걸릴 수 있어 쓰지 않는 편이 안전함",
+    "medium": "원 출처가 불분명하거나 밈 영상·시스템 소리에서 가져온 것. 문제 될 가능성이 있음",
+    "low": "특정 권리자가 드러나지 않는 일반 만화·효과음. 안전 보증은 아님"
+  },
+  "unknown_level": "medium",
+  "unknown_note": "저작권 점검 기록 없음(새로 들어온 효과음) — 원 출처를 확인하세요",
+  "items": {
+    "boing_01":  {"level": "high", "source": "super-mario-jump", "note": "닌텐도 게임 소리"},
+    "ding_01":   {"level": "high", "source": "taco-bell-bong", "note": "타코벨 상표 소리"},
+    "oof_01":    {"level": "high", "source": "roblox-death-oof", "note": "로블록스가 2022년 저작권 분쟁으로 교체한 소리"},
+    "laugh_02":  {"level": "high", "source": "oh-no-no-no-laugh", "note": "노래 'Oh No'(Capone) 일부 — 음악이라 Content ID에 잡힐 수 있음"},
+    "scream_01": {"level": "high", "source": "emotional-damage-auughhh", "note": "유튜버 영상에서 잘라낸 목소리"},
+    "sus_01":    {"level": "high", "source": "the-rock-sus-eyebrow", "note": "방송/밈 영상에서 잘라낸 소리"},
+
+    "error_01":   {"level": "medium", "source": "windows-error-crash", "note": "마이크로소프트 시스템 소리"},
+    "fanfare_01": {"level": "medium", "source": "victory-tadaaaaa", "note": "출처 미상 팡파르"},
+    "scream_02":  {"level": "medium", "source": "faahhhh-funny-scream", "note": "영상에서 잘라낸 목소리 밈"},
+    "awkward_01": {"level": "medium", "source": "bruh-sound-effect", "note": "영상에서 잘라낸 목소리 밈"},
+    "huh_01":     {"level": "medium", "source": "confused-cat-huh", "note": "틱톡 고양이 영상 소리"},
+    "boom_01":    {"level": "medium", "source": "vine-boom", "note": "널리 쓰이지만 원 출처 미상"},
+
+    "pop_01":       {"level": "low", "source": "squeaky-rubber-duck", "note": "일반 만화·소품 소리(고무 오리)"},
+    "pop_02":       {"level": "low", "source": "cartoon-bonk-doge", "note": "일반 만화 소리"},
+    "hit_01":       {"level": "low", "source": "crisp-face-slap", "note": "일반 때리는 소리"},
+    "boing_02":     {"level": "low", "source": "cartoon-spring-boing", "note": "일반 만화 스프링 소리"},
+    "coin_01":      {"level": "low", "source": "cash-register-ka-ching", "note": "일반 금전등록기 소리"},
+    "boom_02":      {"level": "low", "source": "dramatic-shocked-hit", "note": "일반 충격 효과음"},
+    "boom_03":      {"level": "low", "source": "what-loud-shock", "note": "일반 충격 효과음"},
+    "huh_02":       {"level": "low", "source": "confused-reverb-what", "note": "일반 어리둥절 효과음"},
+    "awkward_02":   {"level": "low", "source": "record-scratch-freeze", "note": "일반 레코드 긁는 소리"},
+    "awkward_03":   {"level": "low", "source": "crickets-awkward-silence", "note": "일반 귀뚜라미 소리"},
+    "sad_01":       {"level": "low", "source": "sad-trombone-womp-womp", "note": "일반 슬픈 트롬본 효과음"},
+    "sad_02":       {"level": "low", "source": "crowd-disappointed-awwww", "note": "일반 관중 아쉬움 소리"},
+    "sad_03":       {"level": "low", "source": "tiny-sad-violin", "note": "일반 슬픈 바이올린 효과음"},
+    "laugh_01":     {"level": "low", "source": "goofy-cartoon-laugh", "note": "일반 만화 웃음 소리"},
+    "punchline_01": {"level": "low", "source": "ba-dum-tss-punchline", "note": "일반 드럼 펀치라인 효과음"},
+    "bleep_01":     {"level": "low", "source": "censored-audio-bleep", "note": "일반 검열 삐 소리"}
+  }
+}

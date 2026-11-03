@@ -1,0 +1,14 @@
+{
+ "type": "standard",
+ "title": "느티나무 도마",
+ "content_urls": {
+  "desktop": {
+   "page": "https://ko.wikipedia.org/wiki/%EB%8A%90%ED%8B%B0%EB%82%98%EB%AC%B4_%EB%8F%84%EB%A7%88"
+  }
+ },
+ "originalimage": {
+  "source": "https://upload.wikimedia.org/wikipedia/commons/1/17/Neuti_face.jpg?utm_source=ko.wikipedia.org",
+  "width": 3000,
+  "height": 2000
+ }
+}

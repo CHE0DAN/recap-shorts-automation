@@ -1,0 +1,8 @@
+{
+  "_doc": "자극적·잔혹한 그림에 흑백/흐림을 자동으로 입힘(유튜브 노란 딱지 피하기, recap_shorts/images/sensitive.py). mild/strong 값: none(안 함) | gray(흑백) | gray_blur(흑백+흐림). blur_sigma 는 가로 1080px 그림 기준(더 큰 그림은 비례). check_ai=false 면 AI 이미지는 검사하지 않음. 작업 옵션 sensitive_treatment=false 로 작업별로 끌 수 있음.",
+  "enabled": true,
+  "mild": "gray",
+  "strong": "gray_blur",
+  "blur_sigma": 28,
+  "check_ai": true
+}

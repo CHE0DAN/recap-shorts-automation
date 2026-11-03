@@ -1,0 +1,499 @@
+{
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "duration": 33.805,
+ "title_lines": [
+  "오래된 가게 벽 뜯으니",
+  "삼십 년 전 편지가 왔대"
+ ],
+ "hook": {
+  "text": "오래된 가게 벽 뜯으니 삼십 년 전 편지가 왔대",
+  "start": 0.0,
+  "end": 3.156
+ },
+ "shots": [
+  {
+   "file": "assets/cap/dc_head.png",
+   "start": 0.0,
+   "end": 3.156,
+   "motion": "zoom_in",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "source_id": "dc_head"
+  },
+  {
+   "file": "assets/cap/c01_p1.png",
+   "start": 3.156,
+   "end": 4.641,
+   "motion": "static",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "source_id": "c01_p1"
+  },
+  {
+   "file": "assets/cap/c01_p2.png",
+   "start": 4.641,
+   "end": 6.126,
+   "motion": "static",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "source_id": "c01_p2"
+  },
+  {
+   "file": "assets/cap/c01_s01.png",
+   "start": 6.126,
+   "end": 7.611,
+   "motion": "enter",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "source_id": "c01_s01"
+  },
+  {
+   "file": "assets/ai/ai_00.png",
+   "start": 7.611,
+   "end": 9.033,
+   "motion": "static",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "source_id": "ai_00"
+  },
+  {
+   "file": "assets/cap/c02_p2.png",
+   "start": 9.033,
+   "end": 10.454,
+   "motion": "static",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "source_id": "c02_p2"
+  },
+  {
+   "file": "assets/cap/c02_s02.png",
+   "start": 10.454,
+   "end": 11.876,
+   "motion": "enter",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "source_id": "c02_s02"
+  },
+  {
+   "file": "assets/cap/c01_s03.png",
+   "start": 11.876,
+   "end": 13.715,
+   "motion": "static",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "source_id": "c01_s03"
+  },
+  {
+   "file": "assets/ai/ai_03.png",
+   "start": 13.715,
+   "end": 15.555,
+   "motion": "static",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "source_id": "ai_03"
+  },
+  {
+   "file": "assets/meme/r_pepe_angry_red.png",
+   "kind": "meme",
+   "start": 15.555,
+   "end": 16.755,
+   "motion": "static",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "source_id": "r_pepe_angry_red",
+   "meme_id": "r_pepe_angry_red",
+   "beat": "angry",
+   "meme_src": "assets_local/memes_r/r_pepe_angry_red.png",
+   "bg": [
+    255,
+    255,
+    255
+   ],
+   "anim": "none",
+   "fit": "cover",
+   "wide_aspect": 1.25,
+   "fit_focus_y": 0.35,
+   "margin": 0,
+   "pop_s": 0.18,
+   "overshoot": 1.12
+  },
+  {
+   "file": "assets/cap/c01_s04.png",
+   "start": 16.755,
+   "end": 19.167,
+   "motion": "enter",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "source_id": "c01_s04"
+  },
+  {
+   "file": "assets/ai/ai_04.png",
+   "start": 19.167,
+   "end": 21.58,
+   "motion": "static",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "source_id": "ai_04"
+  },
+  {
+   "file": "assets/cap/c04_p1.png",
+   "start": 21.58,
+   "end": 22.822,
+   "motion": "static",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "source_id": "c04_p1"
+  },
+  {
+   "file": "assets/cap/c05_s05.png",
+   "start": 22.822,
+   "end": 24.065,
+   "motion": "enter",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "source_id": "c05_s05"
+  },
+  {
+   "file": "assets/ai/ai_05.png",
+   "start": 24.065,
+   "end": 25.307,
+   "motion": "static",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "source_id": "ai_05"
+  },
+  {
+   "file": "assets/cap/c05_s06.png",
+   "start": 25.307,
+   "end": 27.606,
+   "motion": "static",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "source_id": "c05_s06"
+  },
+  {
+   "file": "assets/ai/ai_06.png",
+   "start": 27.606,
+   "end": 29.906,
+   "motion": "enter",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "source_id": "ai_06"
+  },
+  {
+   "file": "assets/cap/c03_p3.png",
+   "start": 29.906,
+   "end": 33.805,
+   "motion": "static",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "source_id": "c03_p3"
+  }
+ ],
+ "captions": [
+  {
+   "text": "가게를 고치던 목수가",
+   "start": 3.156,
+   "end": 4.3574,
+   "emphasis": null
+  },
+  {
+   "text": "벽 안에서 먼지 묻은",
+   "start": 4.3574,
+   "end": 5.4086,
+   "emphasis": null
+  },
+  {
+   "text": "봉투 하나를 꺼냈대.",
+   "start": 5.4086,
+   "end": 6.4598,
+   "emphasis": null
+  },
+  {
+   "text": "삼십 년 된 봉투였어.",
+   "start": 6.4598,
+   "end": 7.511,
+   "emphasis": "삼십 년"
+  },
+  {
+   "text": "봉투엔 우표도 없이",
+   "start": 7.611,
+   "end": 9.0985,
+   "emphasis": "우표도"
+  },
+  {
+   "text": "이름과 지금은 없는",
+   "start": 9.0985,
+   "end": 10.2885,
+   "emphasis": null
+  },
+  {
+   "text": "골목 이름만 적혀 있었대.",
+   "start": 10.2885,
+   "end": 11.776,
+   "emphasis": null
+  },
+  {
+   "text": "가게 주인은 동네를",
+   "start": 11.876,
+   "end": 12.9551,
+   "emphasis": null
+  },
+  {
+   "text": "돌며 그 이름을 물었고,",
+   "start": 12.9551,
+   "end": 14.0343,
+   "emphasis": null
+  },
+  {
+   "text": "마침 두 집 건너에",
+   "start": 14.0343,
+   "end": 15.4217,
+   "emphasis": "두 집 건너"
+  },
+  {
+   "text": "그 사람이 살았대.",
+   "start": 15.4217,
+   "end": 16.655,
+   "emphasis": null
+  },
+  {
+   "text": "편지는 그 사람이",
+   "start": 16.755,
+   "end": 17.8575,
+   "emphasis": null
+  },
+  {
+   "text": "이사를 떠나던 날",
+   "start": 17.8575,
+   "end": 19.1175,
+   "emphasis": null
+  },
+  {
+   "text": "새벽녘에 어머니가 밤새",
+   "start": 19.1175,
+   "end": 20.3775,
+   "emphasis": "새벽녘"
+  },
+  {
+   "text": "써 둔 것이었대.",
+   "start": 20.3775,
+   "end": 21.48,
+   "emphasis": null
+  },
+  {
+   "text": "편지에는 미안하다는",
+   "start": 21.58,
+   "end": 22.3572,
+   "emphasis": null
+  },
+  {
+   "text": "말과 함께 오래된",
+   "start": 22.3572,
+   "end": 23.1344,
+   "emphasis": null
+  },
+  {
+   "text": "가족사진 한 장이",
+   "start": 23.1344,
+   "end": 24.1707,
+   "emphasis": "가족사진"
+  },
+  {
+   "text": "들어 있었대.",
+   "start": 24.1707,
+   "end": 25.207,
+   "emphasis": null
+  },
+  {
+   "text": "그 사람은 편지를",
+   "start": 25.307,
+   "end": 26.0568,
+   "emphasis": null
+  },
+  {
+   "text": "다 읽고도 한참 동안",
+   "start": 26.0568,
+   "end": 27.4065,
+   "emphasis": null
+  },
+  {
+   "text": "아무 말도 못 하고",
+   "start": 27.4065,
+   "end": 28.6063,
+   "emphasis": null
+  },
+  {
+   "text": "그냥 울었다고 했어.",
+   "start": 28.6063,
+   "end": 29.806,
+   "emphasis": "울었다고"
+  },
+  {
+   "text": "삼십 년 된 편지가 이제야",
+   "start": 29.906,
+   "end": 31.4844,
+   "emphasis": null
+  },
+  {
+   "text": "제자리를 찾은 거였지?",
+   "start": 31.4844,
+   "end": 32.905,
+   "emphasis": null
+  }
+ ],
+ "audio": {
+  "voice": "voice/voice.wav",
+  "bgm": null,
+  "bgm_db": -22.0,
+  "sfx_on_cuts": false,
+  "sfx": [
+   {
+    "file": "assets_local/sfx/user_meme/hit_01.wav",
+    "t": 0.06,
+    "db": -3.0,
+    "type": "hit",
+    "why": "hook",
+    "id": "hit_01",
+    "slot": "open"
+   },
+   {
+    "file": "assets_local/sfx/user_meme/pop_02.wav",
+    "t": 3.176,
+    "db": -15.0,
+    "type": "pop",
+    "why": "hook",
+    "id": "pop_02",
+    "slot": "first_cut"
+   },
+   {
+    "file": "assets_local/sfx/user_meme/pop_01.wav",
+    "t": 4.671,
+    "db": -15.0,
+    "type": "pop",
+    "why": "cut",
+    "id": "pop_01"
+   },
+   {
+    "file": "assets_local/sfx/chime/sparkle_01.wav",
+    "t": 6.156,
+    "db": -15.0,
+    "type": "sparkle",
+    "why": "cut",
+    "id": "sparkle_01"
+   },
+   {
+    "file": "assets_local/sfx/user_meme/pop_02.wav",
+    "t": 11.906,
+    "db": -15.0,
+    "type": "pop",
+    "why": "cut",
+    "id": "pop_02"
+   },
+   {
+    "file": "assets_local/sfx/user_meme/ding_01.wav",
+    "t": 19.197,
+    "db": -23.0,
+    "type": "ding",
+    "why": "cut",
+    "id": "ding_01"
+   }
+  ],
+  "voice_offset_s": 0.2
+ },
+ "options": {
+  "snap_captions_to_cuts": true
+ },
+ "overlays": [],
+ "intro": {
+  "style": "card",
+  "label_icon": "🤣",
+  "panel_color": "#FFFFFF",
+  "header_color": "#6DB386",
+  "title_color": "#010101",
+  "ref_box_h": 1028,
+  "panel_h_start": 1028,
+  "panel_h_end": 792,
+  "header_px": 30,
+  "title_px": 64,
+  "line_gap_px": 118,
+  "header_cy": -150,
+  "title1_cy": -38.5,
+  "zoom_pre_per_s": 0.014,
+  "zoom_post_per_s": 0.006,
+  "pop_s": 0.067,
+  "pop_text_scale": 1.084,
+  "ease": "in_out",
+  "pop_lead_s": 0.15,
+  "pop_min_s": 0.6,
+  "pop_before_cut_min_s": 0.5,
+  "side_margin_px": 40,
+  "font_regular": [
+   "assets/fonts/Pretendard-Regular.otf",
+   "C:/Windows/Fonts/malgun.ttf"
+  ],
+  "label": "| 유머 • 정보 게시판 >",
+  "lines": [
+   "오래된 가게 벽 뜯으니",
+   "삼십 년 전 편지가 왔대"
+  ],
+  "t_pop": 1.633,
+  "t_cut": 3.156
+ },
+ "fx": {
+  "beats": [
+   "shock",
+   "neutral",
+   "funny",
+   "angry",
+   "reveal",
+   "neutral",
+   "neutral",
+   "conclusion"
+  ],
+  "beats_source": "cache",
+  "notes": [
+   "효과음 1개를 빼고 만든 기준"
+  ]
+ }
+}

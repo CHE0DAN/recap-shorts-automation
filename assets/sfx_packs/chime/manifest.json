@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "sparkle_01",
+      "file": "sparkle_01.wav",
+      "type": "sparkle",
+      "roles": [
+        "cut",
+        "ending"
+      ],
+      "duration": 0.45,
+      "source_file": "otologic/News-Alert01-3(Far).mp3",
+      "source_page": "https://otologic.jp/free/se/news-alert01.html",
+      "license": "CC BY 4.0",
+      "credit": "필수: 효과음 OtoLogic (https://otologic.jp, CC BY 4.0, 길이·속도 일부 변경)",
+      "source": "OtoLogic"
+    },
+    {
+      "id": "sparkle_02",
+      "file": "sparkle_02.wav",
+      "type": "sparkle",
+      "roles": [
+        "cut"
+      ],
+      "duration": 0.45,
+      "source_file": "otologic/Smartphone-UI_Sound01-03(Dry).mp3",
+      "source_page": "https://otologic.jp/free/se/cell_phone01.html",
+      "license": "CC BY 4.0",
+      "credit": "필수: 효과음 OtoLogic (https://otologic.jp, CC BY 4.0, 길이·속도 일부 변경)",
+      "source": "OtoLogic"
+    }
+  ]
+}

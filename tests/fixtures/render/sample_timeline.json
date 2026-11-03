@@ -1,0 +1,450 @@
+{
+ "fps": 30,
+ "size": [
+  1080,
+  1920
+ ],
+ "duration": 35.0,
+ "title_lines": [
+  "테스트 제목 1줄",
+  "노란 2줄"
+ ],
+ "hook": {
+  "text": "야구 갤러리가 발칵 뒤집힌 사연",
+  "start": 0.0,
+  "end": 2.67
+ },
+ "shots": [
+  {
+   "file": "images/img1.png",
+   "start": 0.0,
+   "end": 2.67,
+   "motion": "zoom_in",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "source_id": "fixture1"
+  },
+  {
+   "file": "images/img2.png",
+   "start": 2.67,
+   "end": 4.07,
+   "motion": "static",
+   "focus": [
+    0.3,
+    0.4
+   ],
+   "source_id": "fixture2"
+  },
+  {
+   "file": "images/img3.png",
+   "start": 4.07,
+   "end": 5.37,
+   "motion": "enter",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "source_id": "fixture3"
+  },
+  {
+   "file": "images/img4.png",
+   "start": 5.37,
+   "end": 6.87,
+   "motion": "static",
+   "focus": [
+    0.5,
+    0.2
+   ],
+   "source_id": "fixture4"
+  },
+  {
+   "file": "images/img5.png",
+   "start": 6.87,
+   "end": 8.07,
+   "motion": "static",
+   "focus": [
+    0.7,
+    0.5
+   ],
+   "source_id": "fixture5"
+  },
+  {
+   "file": "images/img6.png",
+   "start": 8.07,
+   "end": 9.67,
+   "motion": "enter",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "source_id": "fixture6"
+  },
+  {
+   "file": "images/img7.png",
+   "start": 9.67,
+   "end": 11.0,
+   "motion": "static",
+   "focus": [
+    0.2,
+    0.3
+   ],
+   "source_id": "fixture7"
+  },
+  {
+   "file": "images/img8.png",
+   "start": 11.0,
+   "end": 12.4,
+   "motion": "static",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "source_id": "fixture8"
+  },
+  {
+   "file": "images/img1.png",
+   "start": 12.4,
+   "end": 13.7,
+   "motion": "enter",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "source_id": "fixture1"
+  },
+  {
+   "file": "images/img2.png",
+   "start": 13.7,
+   "end": 15.2,
+   "motion": "static",
+   "focus": [
+    0.3,
+    0.4
+   ],
+   "source_id": "fixture2"
+  },
+  {
+   "file": "images/img3.png",
+   "start": 15.2,
+   "end": 16.4,
+   "motion": "static",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "source_id": "fixture3"
+  },
+  {
+   "file": "images/img4.png",
+   "start": 16.4,
+   "end": 18.0,
+   "motion": "enter",
+   "focus": [
+    0.5,
+    0.2
+   ],
+   "source_id": "fixture4"
+  },
+  {
+   "file": "images/img5.png",
+   "start": 18.0,
+   "end": 19.33,
+   "motion": "static",
+   "focus": [
+    0.7,
+    0.5
+   ],
+   "source_id": "fixture5"
+  },
+  {
+   "file": "images/img6.png",
+   "start": 19.33,
+   "end": 20.73,
+   "motion": "static",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "source_id": "fixture6"
+  },
+  {
+   "file": "images/img7.png",
+   "start": 20.73,
+   "end": 22.03,
+   "motion": "enter",
+   "focus": [
+    0.2,
+    0.3
+   ],
+   "source_id": "fixture7"
+  },
+  {
+   "file": "images/img8.png",
+   "start": 22.03,
+   "end": 23.53,
+   "motion": "static",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "source_id": "fixture8"
+  },
+  {
+   "file": "images/img1.png",
+   "start": 23.53,
+   "end": 24.73,
+   "motion": "static",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "source_id": "fixture1"
+  },
+  {
+   "file": "images/img2.png",
+   "start": 24.73,
+   "end": 26.33,
+   "motion": "enter",
+   "focus": [
+    0.3,
+    0.4
+   ],
+   "source_id": "fixture2"
+  },
+  {
+   "file": "images/img3.png",
+   "start": 26.33,
+   "end": 27.66,
+   "motion": "static",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "source_id": "fixture3"
+  },
+  {
+   "file": "images/img4.png",
+   "start": 27.66,
+   "end": 29.06,
+   "motion": "static",
+   "focus": [
+    0.5,
+    0.2
+   ],
+   "source_id": "fixture4"
+  },
+  {
+   "file": "images/img5.png",
+   "start": 29.06,
+   "end": 30.36,
+   "motion": "enter",
+   "focus": [
+    0.7,
+    0.5
+   ],
+   "source_id": "fixture5"
+  },
+  {
+   "file": "images/img6.png",
+   "start": 30.36,
+   "end": 31.86,
+   "motion": "static",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "source_id": "fixture6"
+  },
+  {
+   "file": "images/img7.png",
+   "start": 31.86,
+   "end": 33.06,
+   "motion": "static",
+   "focus": [
+    0.2,
+    0.3
+   ],
+   "source_id": "fixture7"
+  },
+  {
+   "file": "images/img8.png",
+   "start": 33.06,
+   "end": 35.0,
+   "motion": "enter",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "source_id": "fixture8"
+  }
+ ],
+ "captions": [
+  {
+   "text": "어제 경기 끝나고",
+   "start": 2.67,
+   "end": 3.8353,
+   "emphasis": "어제"
+  },
+  {
+   "text": "올라온 글이 시작이었대",
+   "start": 3.8353,
+   "end": 5.5,
+   "emphasis": null
+  },
+  {
+   "text": "선발투수가",
+   "start": 5.5,
+   "end": 6.3324,
+   "emphasis": null
+  },
+  {
+   "text": "갑자기 마운드에서",
+   "start": 6.3324,
+   "end": 7.6642,
+   "emphasis": null
+  },
+  {
+   "text": "웃었다는 거야",
+   "start": 7.6642,
+   "end": 8.663,
+   "emphasis": "웃었다는"
+  },
+  {
+   "text": "관중석에서는 다들",
+   "start": 8.663,
+   "end": 9.995,
+   "emphasis": "관중석"
+  },
+  {
+   "text": "무슨 일인가 싶었다더라",
+   "start": 9.995,
+   "end": 11.66,
+   "emphasis": null
+  },
+  {
+   "text": "알고 보니 포수가",
+   "start": 11.66,
+   "end": 12.8253,
+   "emphasis": null
+  },
+  {
+   "text": "장난으로 공을 두 개 줬대",
+   "start": 12.8253,
+   "end": 14.49,
+   "emphasis": "두 개"
+  },
+  {
+   "text": "심판도 한참",
+   "start": 14.49,
+   "end": 15.3223,
+   "emphasis": "심판도"
+  },
+  {
+   "text": "어이없어 하더니",
+   "start": 15.3223,
+   "end": 16.4874,
+   "emphasis": null
+  },
+  {
+   "text": "결국 웃음이 터졌고",
+   "start": 16.4874,
+   "end": 17.819,
+   "emphasis": null
+  },
+  {
+   "text": "댓글에는 이게",
+   "start": 17.819,
+   "end": 18.818,
+   "emphasis": null
+  },
+  {
+   "text": "프로 맞냐는 반응이",
+   "start": 18.818,
+   "end": 20.15,
+   "emphasis": "프로"
+  },
+  {
+   "text": "줄줄이 달렸고",
+   "start": 20.15,
+   "end": 21.149,
+   "emphasis": null
+  },
+  {
+   "text": "감독은 인터뷰에서",
+   "start": 21.149,
+   "end": 22.4807,
+   "emphasis": null
+  },
+  {
+   "text": "그냥 분위기 풀려고",
+   "start": 22.4807,
+   "end": 23.8123,
+   "emphasis": "분위기"
+  },
+  {
+   "text": "한 거라고 했다는데",
+   "start": 23.8123,
+   "end": 25.144,
+   "emphasis": null
+  },
+  {
+   "text": "팬들은 오히려",
+   "start": 25.144,
+   "end": 26.143,
+   "emphasis": null
+  },
+  {
+   "text": "이런 게 야구의",
+   "start": 26.143,
+   "end": 27.142,
+   "emphasis": null
+  },
+  {
+   "text": "맛이라며 좋아했고",
+   "start": 27.142,
+   "end": 28.474,
+   "emphasis": null
+  },
+  {
+   "text": "그래서 다음 경기",
+   "start": 28.474,
+   "end": 29.6392,
+   "emphasis": null
+  },
+  {
+   "text": "보러 가는 사람이",
+   "start": 29.6392,
+   "end": 30.8043,
+   "emphasis": null
+  },
+  {
+   "text": "더 늘었다는데",
+   "start": 30.8043,
+   "end": 31.803,
+   "emphasis": "더 늘었다는데"
+  },
+  {
+   "text": "이 정도면 장난이 아니라",
+   "start": 31.803,
+   "end": 33.468,
+   "emphasis": null
+  },
+  {
+   "text": "마케팅 아닌가 싶다",
+   "start": 33.468,
+   "end": 34.8,
+   "emphasis": "마케팅"
+  }
+ ],
+ "options": {
+  "snap_captions_to_cuts": true
+ },
+ "audio": {
+  "voice": "voice.wav",
+  "bgm": null,
+  "bgm_db": -22,
+  "sfx_on_cuts": false
+ }
+}

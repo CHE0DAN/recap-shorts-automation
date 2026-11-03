@@ -1,0 +1,25 @@
+{
+ "query": {
+  "pages": {
+   "1": {
+    "title": "File:Neuti_face.jpg",
+    "imageinfo": [
+     {
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Neuti_face.jpg",
+      "extmetadata": {
+       "LicenseShortName": {
+        "value": "CC BY 2.0"
+       },
+       "LicenseUrl": {
+        "value": "https://creativecommons.org/licenses/by/2.0"
+       },
+       "Artist": {
+        "value": "<a href=\"x\">가상작가</a>"
+       }
+      }
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,76 @@
+# 비밀값·로컬 설정 (커밋 금지)
+.env
+.env.*
+*.key
+*.pem
+*token*
+*secret*
+# 이 PC 의 도구 경로 등 로컬 설정
+config.local.json
+# 화면에서 고른 채널 대주제(사용자 선택 — 기본값은 커밋된 config/channel.json)
+config/channel.local.json
+# 화면 '설정'에서 넣은 API 키·AI 그림 엔진 (키 값이 들어 있음)
+config/settings.local.json
+# 이 PC 에서만 켜는 구글 드라이브 보관 설정
+config/storage.local.json
+# 이 PC 에서만 쓰는 정리용 스크립트
+scripts_local/
+
+# 받아쓰기·로컬 목소리 모델 파일(scripts/setup_models.py 로 받음, 163MB·129MB)
+models/
+
+# 원자료·다른 사람의 영상/프레임/대본 (로컬 전용)
+data/raw/
+data/raw*
+data/local_only/
+*.mp4
+*.webm
+*.mkv
+*.m4a
+*.wav
+*.mp3
+*.part
+*.ytdl
+
+# 임시 파일
+tmp/
+*.tmp
+*.log
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# 프로그램 작업 폴더(수집 결과·캡처·렌더 결과 — 다른 사람의 글/이미지가 들어 있음)
+work/
+.pytest_cache/
+
+# 테스트용으로 직접 만든 합성 소리(사인파·무음)는 커밋
+!tests/fixtures/**/*.wav
+
+# Qwen3-TTS 모델 캐시 (약 4.3GB)
+tools/qwen_tts/models/
+
+# Clef 평가 원자료(디시 글 제목·본문, 호출 캐시 — 다른 사람의 글이 들어 있음)
+recap_shorts/clef/_topics_raw.json
+recap_shorts/clef/eval_raw.json
+
+# 프론트 빌드·의존성
+web/node_modules/
+web/dist/
+
+# 짤(밈) 이미지·내려받은 효과음 — 다른 사람이 만든 것이라 로컬 전용
+assets_local/
+
+# 직접 합성한 효과음(scripts/make_sfx.py)과 기본 효과음 꾸러미(assets/sfx_packs, README 에 출처·조건)는 커밋
+!assets/sfx/**/*.wav
+!assets/sfx_packs/**/*.wav
+
+# 이 PC 에서만 쓰는 추가 탭(desktop.py 가 있으면 불러온다)
+recap_shorts/local_tabs.py
+
+# 작업 중 찍은 화면(실제 글이 찍힌 것이 있어 공개하지 않음)·로그
+web/screens/
+_logs/

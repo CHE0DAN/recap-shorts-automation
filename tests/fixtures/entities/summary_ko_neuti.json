@@ -1,0 +1,19 @@
+{
+ "type": "standard",
+ "title": "느티",
+ "content_urls": {
+  "desktop": {
+   "page": "https://ko.wikipedia.org/wiki/%EB%8A%90%ED%8B%B0"
+  }
+ },
+ "thumbnail": {
+  "source": "https://upload.wikimedia.org/wikipedia/ko/thumb/2/29/Neuti_Vol._2.jpg/240px-Neuti_Vol._2.jpg?utm_source=ko.wikipedia.org",
+  "width": 240,
+  "height": 338
+ },
+ "originalimage": {
+  "source": "https://upload.wikimedia.org/wikipedia/ko/2/29/Neuti_Vol._2.jpg?utm_source=ko.wikipedia.org&utm_campaign=api",
+  "width": 240,
+  "height": 338
+ }
+}

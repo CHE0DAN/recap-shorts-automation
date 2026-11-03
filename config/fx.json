@@ -1,0 +1,301 @@
+{
+  "_doc": "짤(밈)·효과음 설정. 항목별 뜻은 docs/fx_config.md. 짤 라이브러리가 없으면 짤은 건너뛴다.",
+  "enabled": true,
+  "beats": {
+    "use_llm": true,
+    "model": "gemini-3.8-flash",
+    "cache": "fx/beats.json"
+  },
+  "memes": {
+    "enabled": true,
+    "position": "end",
+    "min_before_s": 0.6,
+    "library": "assets_local/memes_r",
+    "max_per_video": 2,
+    "max_by_length": [
+      [
+        40,
+        2
+      ],
+      [
+        50,
+        3
+      ]
+    ],
+    "max_cap": 3,
+    "min_gap_s": 3.0,
+    "allowed_beats": [
+      "question",
+      "angry",
+      "reveal",
+      "smug",
+      "awkward",
+      "shock",
+      "funny",
+      "sad",
+      "neutral"
+    ],
+    "beat_priority": [
+      "question",
+      "angry",
+      "reveal",
+      "smug",
+      "awkward",
+      "shock",
+      "funny",
+      "sad",
+      "neutral"
+    ],
+    "on_hook": false,
+    "first_after_s": 3.0,
+    "end_with_meme": false,
+    "prefer_transparent": true,
+    "avoid_same_family_twice_in_a_row": true,
+    "full_shot_ratio": 1.0,
+    "full_shot_len_s": 1.2,
+    "full_shot_min_s": 0.6,
+    "full_shot_max_s": 2.0,
+    "full_shot_bg": [
+      255,
+      255,
+      255
+    ],
+    "full_shot_anim": "none",
+    "full_shot_fit": "cover",
+    "wide_aspect": 1.25,
+    "lead_s": 0.0,
+    "sticker": {
+      "size_frac": 0.38,
+      "anchors": [
+        "box_br",
+        "box_bl"
+      ],
+      "anim": "none",
+      "anim_by_beat": {},
+      "max_len_s": 1.8,
+      "pop_s": 0.18,
+      "overshoot": 1.12,
+      "fade_s": 0.12,
+      "shake_px": 10,
+      "outline_px": 6,
+      "margin_px": 24
+    },
+    "family_alias": {
+      "apu": "pepe"
+    },
+    "max_per_family": {
+      "pepe": 1
+    },
+    "_note_count": "40초 이하 영상은 짤 2개(끝 짤 포함)까지, 같은 계열(페페 등)은 1개까지. 짤이 잦으면 내용보다 짤이 더 눈에 띈다.",
+    "full_shot_focus_y": 0.35,
+    "full_shot_margin": 0,
+    "_note_library": "짤은 assets_local/memes_r 꾸러미(manifest 에 원본 출처를 적은 것)에서만 고른다. 상자 가득 흰 바탕 1.2초, 영상당 중앙 1개.",
+    "pick_by": "fit",
+    "_note_fit": "박자 라벨만 보고 고르면 평범한 사실 문장에 '이겼다' 표정의 페페가 붙는다. pick_by 'fit' = 박자 라벨 대신 문장 전체와 짤 뜻(manifest meaning)을 Gemini 3.8 Flash 가 함께 보고, 반응이 자연스러운 문장에만 고름. 어울리는 곳이 없거나 호출이 실패하면 짤 없이 감. 'beats' = 예전 방식."
+  },
+  "sfx": {
+    "enabled": true,
+    "libraries": [
+      "assets/sfx_packs/user_meme",
+      "assets/sfx_packs/chime"
+    ],
+    "avoid_rights_risk": null,
+    "ban_sources": ["emotional-damage-auughhh"],
+    "_note_ban": "쓰지 않기로 한 효과음(scream_01, emotional damage). 원본 파일 이름 앞부분으로 뺀다.",
+    "_note_rights": "효과음 저작권 점검(config/sfx_rights.json, 원본 파일 이름만 보고 매긴 판단). 영상에 high·medium 소리가 들어가면 검수 화면이 경고만 한다(빼지 않음). 여기를 \"high\" 로 두면 high 를, \"medium\" 이면 medium 이상을 아예 고르지 않는다(그 종류가 비면 그 자리는 건너뜀). null = 끔(기본, 고르기는 예전 그대로). 목록: python -m recap_shorts.fx rights",
+    "min_gap_s": 0.5,
+    "max_per_video": 24,
+    "place_on": "none",
+    "gap_window_s": 0.25,
+    "cuts": {
+      "mode": "all",
+      "skip_ratio": 0.56,
+      "types": {
+        "sparkle": 0.26,
+        "ding": 0.22,
+        "pop": 0.2,
+        "boom": 0.11
+      },
+      "type": "pop",
+      "db": -17,
+      "offset_s": 0.03,
+      "skip_first": false
+    },
+    "meme_pop": {
+      "db": -20,
+      "offset_s": 0.23,
+      "default_type": "pop",
+      "_note": "충격 → 붐, 웃김 → 띠용, 그 밖은 컷 순환. 이 꾸러미는 반응 소리가 많아 박자마다 맞는 밈 소리를 붙임(neutral 만 컷 순환)",
+      "by_beat": {
+        "shock": "boom",
+        "reveal": "boom",
+        "question": "huh",
+        "angry": "scream",
+        "awkward": "awkward",
+        "sad": "sad",
+        "funny": "laugh",
+        "smug": "sus",
+        "conclusion": "punchline"
+      },
+      "rest_from_cuts": true
+    },
+    "hook": {
+      "enabled": true,
+      "open": {
+        "type": "hit",
+        "t": 0.06,
+        "db": -3
+      },
+      "pop": {
+        "enabled": false,
+        "type": "whoosh_short",
+        "offset_s": 0.06,
+        "db": -8
+      },
+      "first_cut": {
+        "type": "pop",
+        "offset_s": 0.02,
+        "db": -15
+      }
+    },
+    "ending": {
+      "enabled": false,
+      "types": {
+        "sparkle": 0.3,
+        "ding": 0.2,
+        "pop": 0.1
+      },
+      "len_s": 0.4,
+      "db": -18,
+      "at_end_s": 1.1
+    },
+    "beat_events": {
+      "enabled": false,
+      "db": -18,
+      "offset_s": 0.0,
+      "by_beat": {
+        "reveal": "ding",
+        "shock": "boom"
+      }
+    },
+    "types_db": {
+      "boom": -15,
+      "huh": -21,
+      "scream": -22,
+      "awkward": -21,
+      "sad": -21,
+      "laugh": -22,
+      "sus": -21,
+      "oof": -21,
+      "fanfare": -21,
+      "error": -20,
+      "bleep": -20,
+      "pop": -15,
+      "ding": -23,
+      "sparkle": -15
+    },
+    "fallback_libraries": [],
+    "_note_library": "효과음은 libraries 에 적은 저장소 기본 꾸러미(assets/sfx_packs)에서 고른다. 설정 화면에서 효과음 폴더를 고르면 그 폴더가 먼저다(settings.sfx_dirs, 없는 종류는 기본 꾸러미로 채움). 꾸러미가 하나도 없으면 저장소의 합성음(assets/sfx)으로 대신한다(fx/apply.py). 자리·개수·시차는 측정 규칙 그대로.",
+    "max_per_10s": 2.3,
+    "max_same_file": 4,
+    "avoid_last_n": 1,
+    "type_fallback": {
+      "sparkle": "ding",
+      "jingle": "ding",
+      "slidewhistle": "boing",
+      "cheer": "laugh",
+      "coin": "pop",
+      "animal": "pop",
+      "aw": "sad",
+      "gasp": "boom",
+      "ding": "sparkle",
+      "sus": "huh",
+      "scream": "boom"
+    },
+    "_note_type_fallback": "꾸러미에 없는 종류의 자리는 여기 적은 종류로 한 번 바꿔 고른다. ding → sparkle 은 저장소 기본 밈 꾸러미에 딩(상표 소리라 뺌)이 없어 컷 자리 22% 가 비지 않게 차임으로. sus → huh·scream → boom 은 기본 꾸러미에 없는 종류(권리 문제로 뺌)라 우쭐·화난 짤 소리가 비지 않게.",
+    "_note_timing": "측정 규칙(12가지): 그림 교체 +0.24초, 컷 38% 건너뜀, 10초당 4.5개, 간격 0.8초, 같은 파일 영상당 2번·직전 3개와 다르게",
+    "_note_count": "10초당 2.3개·컷 60% 건너뜀(참고한 쇼츠의 최근 측정치 10초당 약 2개에 맞춤, 그 전 측정은 4.7~4.9). 크기는 측정(−18dB)보다 2dB 낮춤: 측정한 영상들은 배경음악이 효과음을 덮었지만 배경음악 없는 영상은 더 튄다.",
+    "_note_db": "목소리 같은 밈 소리(허?·브러·비명·웃음)는 같은 피크라도 더 크게 들려 1~2dB 더 낮춤",
+    "_note_j": "그림과 동시(+0.03)·간격 0.5·같은 소리 영상당 4번·끝은 영상 끝 1.1초 전 0.4초. max_per_10s 는 2.3 그대로 둔다(10초당 2.3개).",
+    "_note_off": "첫 컷 '톡'(hook.first_cut)은 켜 두고, 끝 '휙'(ending)은 영상 끝에서 어색해서 꺼 둔다(enabled false, 값은 다시 켤 때를 위해 남김).",
+    "_note_whoosh": "휙 소리(카드 튐의 whoosh_short_01, 컷의 whoosh_01)는 어색하게 들려 쓰지 않는다: 꾸러미·컷 순환·끝에서 빼고, 카드 튐 자리(hook.pop)는 끈다. 꾸러미에 대신할 휙 소리가 없어 그 자리는 비워 둔다."
+  },
+  "analyze": {
+    "_doc": "효과음·짤 폴더 분석(docs/library_analysis.md). 설정 화면에서 폴더를 고르면 Gemini 가 6개씩 듣거나 보고 매긴 뒤 종류별로 골라 assets_local/analyzed/ 에 꾸러미를 만든다. 원본 폴더는 바꾸지 않는다.",
+    "model": "gemini-3.8-flash",
+    "sfx": {
+      "max_files": 800,
+      "max_file_s": 40,
+      "listen_s": 6,
+      "min_fit": 2,
+      "min_quality": 3,
+      "max_clip_ratio": 0.02,
+      "drop_owner_clear": true,
+      "want": {"pop": 4, "*": 3},
+      "max_active_s": {"hit": 0.6, "pop": 1.0, "ding": 2.0, "sparkle": 2.5, "boom": 3.0, "*": 3.5},
+      "cap_s": {"hit": 0.35, "pop": 0.6, "ding": 1.2, "sparkle": 1.0, "boom": 1.6, "huh": 1.3, "scream": 1.6,
+                "awkward": 1.8, "sad": 2.2, "laugh": 2.0, "sus": 1.8, "punchline": 1.8, "*": 1.8},
+      "_note": "종류마다 want 개까지(점수 = 어울림×2 + 품질), 소리 길이가 max_active_s 를 넘으면 그 종류 후보에서 뺌, 다듬을 때 cap_s 초에서 자름. 파일 이름에 종류가 있으면(pop_01.wav) 그 종류로 개수 제한 없이 둔다."
+    },
+    "meme": {
+      "max_files": 400,
+      "min_side_px": 120,
+      "dup_distance": 12,
+      "min_quality": 2,
+      "max_side_px": 1600,
+      "_note": "혐오 상징·성적·잔인한 그림, 반응 짤이 아닌 그림, 짧은 변 120px 미만, 같은 그림(가로세로 비율 8% 안 + 16×16 차이 해시 256비트 중 12비트 이하 — 줄여 다시 저장한 사본은 5비트 안팎, 같은 캐릭터의 다른 표정은 20비트 넘음)은 뺀다. 저작권은 따지지 않는다. 1600px 넘는 그림은 줄여 PNG 로 복사."
+    }
+  },
+  "timing": {
+    "picture_lead_s": 0.2,
+    "_note": "그림·자막이 말보다 0.2초 먼저 바뀐다(측정). 목소리만 0.2초 늦추고 영상이 0.2초 길어진다. 효과음 시각은 영상 시계 그대로.",
+    "cuts_at_word_gaps": true,
+    "word_cuts": {
+      "asr": "auto",
+      "min_len_s": [0.7, 0.55, 0.4],
+      "good_len_s": [0.8, 2.2],
+      "lead_s": 0.0,
+      "snap_meme_s": 0.4
+    },
+    "_note_cuts": "그림은 문장이 끝날 때 바꾸고 말 중간에서는 바꾸지 않는다(한 낱말이 컷에 갈리면 듣기 어색하다). 한 문장에 그림이 2~3장인 것은 그대로 두고, 문장 안 컷을 같은 간격 자리에서 가장 가까운 어절 경계(가능하면 숨 고르는 곳)로 옮긴다. 문장 끝 컷은 그대로. false 면 예전처럼 문장 구간을 똑같이 나눈다(timeline.build·fx 의 짤 앞 다시 나누기 모두). 어절 경계 시각은 받아쓰기(SenseVoice) 글자 시각(voice/word_times.json 에 저장) → 없으면 음절 비율, 그다음 목소리 에너지가 낮은 곳으로 조금 옮긴다. asr: auto(모델 있으면 돌림)·cache(저장된 것만)·off. min_len_s: 샷 최소 길이를 차례로 낮춰 본다. lead_s: 컷이 어절 경계보다 이만큼 먼저 바뀌게(0 = 경계에서 바로 — 그림이 말보다 0.2초 먼저 바뀌는 picture_lead_s 는 목소리를 늦춰 붙이는 것이라 컷 시각에 그만큼 더해 둠, 안 그러면 컷이 앞 어절의 끝 음절 안으로 들어감). snap_meme_s: 문장 끝 짤 샷의 시작도 그만큼 안에서 어절 경계로 옮김(0 = 안 옮김). 자막 카드는 고른 컷에서 같이 바뀐다(render/captions.make_cards breaks)."
+  },
+  "bgm_note": "배경음악을 목소리 −19dB 로 까는 예가 있다. 이 프로그램은 배경음악을 영상에 섞지 않는다(필요하면 timeline.audio.bgm, bgm_db −19).",
+  "bgm_mode": "upload_note",
+  "_note_bgm_mode": "음악은 영상 파일에 굽지 않고 업로드할 때 유튜브 앱 '사운드 추가'로 넣는다(편집기에서 음악을 섞어 구운 쇼츠는 수익 창출 심사에서 문제가 될 수 있다). upload_note(기본) = timeline.audio.bgm 이 있어도 렌더러가 영상에 섞지 않고 out/upload_sound.txt(곡·시작 위치·크기 힌트·넣는 법)만 쓴다. 배경음악 요청이 없으면 아무 파일도 안 씀. bake = 예전처럼 영상에 섞음. 선택 필드: timeline.audio.bgm_title(곡 제목), bgm_start_s(곡에서 시작할 위치, 초).",
+  "cuts_note": "cuts.mode: none | every_k | sentence_start | all",
+  "intro": {
+    "_doc": "인트로 카드. 0초~t_cut 동안 그림 상자에 흰 카드만(첫 샷·훅 띠는 안 그림), t_pop 에 판이 줄고 글자가 커진 뒤 t_cut 에 하드 컷. 크기는 ref_box_h 대비 우리 상자 높이로 비례 축소.",
+    "_note_fixed": "짤·효과음(작업 옵션 fx)을 끄거나 그 단계가 실패해도 인트로는 붙는다(fx/apply.with_intro). 끄는 곳은 여기 enabled 하나.",
+    "_note_locked": "이 블록의 값과 인트로 그리기(fx/intro.py·render/intro.py·compose)를 바꾸지 말 것 — tests/test_intro_locked.py 가 기준 그림(tests/fixtures/intro_golden/)과 화소 비교로 막는다. 바꾸려면 기준을 먼저 정하고, 바꾼 뒤 tests/fixtures/intro_golden/make.py 로 기준을 다시 만든다.",
+    "enabled": true,
+    "style": "card",
+    "label_default": "디시인사이드",
+    "label_fixed": "| 유머 • 정보 게시판 >",
+    "label_icon": "🤣",
+    "_note_label": "머리줄을 모든 영상에 같은 '🤣 | 유머 • 정보 게시판 >'로 고정한다. label_fixed 를 비우면 예전처럼 실제 출처(디시 갤러리 이름). 아이콘은 컬러 이모지 글꼴(윈도우 seguiemj.ttf)로 그리고, 글꼴이 없으면 아이콘 없이 글자만. 문구를 바꿀지는 설정에서 정한다.",
+    "panel_color": "#FFFFFF",
+    "header_color": "#6DB386",
+    "title_color": "#010101",
+    "ref_box_h": 1028,
+    "panel_h_start": 1028,
+    "panel_h_end": 792,
+    "header_px": 30,
+    "title_px": 64,
+    "line_gap_px": 118,
+    "header_cy": -150,
+    "title1_cy": -38.5,
+    "zoom_pre_per_s": 0.014,
+    "zoom_post_per_s": 0.006,
+    "pop_s": 0.067,
+    "pop_text_scale": 1.084,
+    "ease": "in_out",
+    "pop_lead_s": 0.15,
+    "pop_min_s": 0.6,
+    "pop_before_cut_min_s": 0.5,
+    "side_margin_px": 40,
+    "font_regular": [
+      "assets/fonts/Pretendard-Regular.otf",
+      "C:/Windows/Fonts/malgun.ttf"
+    ]
+  }
+}

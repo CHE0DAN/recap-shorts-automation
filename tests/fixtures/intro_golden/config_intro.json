@@ -1,0 +1,31 @@
+{
+ "enabled": true,
+ "style": "card",
+ "label_default": "디시인사이드",
+ "label_fixed": "| 유머 • 정보 게시판 >",
+ "label_icon": "🤣",
+ "panel_color": "#FFFFFF",
+ "header_color": "#6DB386",
+ "title_color": "#010101",
+ "ref_box_h": 1028,
+ "panel_h_start": 1028,
+ "panel_h_end": 792,
+ "header_px": 30,
+ "title_px": 64,
+ "line_gap_px": 118,
+ "header_cy": -150,
+ "title1_cy": -38.5,
+ "zoom_pre_per_s": 0.014,
+ "zoom_post_per_s": 0.006,
+ "pop_s": 0.067,
+ "pop_text_scale": 1.084,
+ "ease": "in_out",
+ "pop_lead_s": 0.15,
+ "pop_min_s": 0.6,
+ "pop_before_cut_min_s": 0.5,
+ "side_margin_px": 40,
+ "font_regular": [
+  "assets/fonts/Pretendard-Regular.otf",
+  "C:/Windows/Fonts/malgun.ttf"
+ ]
+}

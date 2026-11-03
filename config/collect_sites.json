@@ -1,0 +1,72 @@
+{
+ "_comment": "커뮤니티 글 캡처 설정. blur_selectors: 캡처 전에 흐리게 만들 CSS 선택자(실제 페이지에서 확인한 것만 적음). 비어 있으면 needs_manual_blur=True. ad_hide: 광고로 보이는 요소를 캡처 전에 숨김(보수적 목록, enabled=false로 끔, 사이트별 \"ad_hide\": false로도 끔).",
+ "ad_hide": {
+  "enabled": true,
+  "selectors": [
+   "iframe",
+   "ins.adsbygoogle",
+   "[id^=\"google_ads\"]",
+   "[class*=\"banner\"]"
+  ]
+ },
+ "sites": {
+  "example-community.invalid": {
+   "_comment": "예시 구조. 닉네임·프로필 사진·댓글 작성자 등의 선택자를 확인 후 채움.",
+   "blur_selectors": [],
+   "verified_on": null
+  },
+  "gall.dcinside.com": {
+   "_comment": "실제 글 페이지를 열어 확인한 선택자(PC 레이아웃, 뷰포트 1280). 글 머리: .gallview_head .gall_writer 안의 span.nickname / span.ip / 아이콘 img. 댓글: .view_comment .cmt_nickbox(닉네임+IP). 고정닉 아이콘: .writer_nikcon. 댓글은 페이지가 스스로 POST /board/comment/ 로 불러옴(로딩 후 선택자가 맞음).",
+   "verified_on": "2026-10-17",
+   "verified_urls": [
+    "https://gall.dcinside.com/board/view/?id=test&no=1001",
+    "https://gall.dcinside.com/board/view/?id=test&no=1002"
+   ],
+   "clip_selectors": [
+    ".view_content_wrap",
+    ".view_comment"
+   ],
+   "ad_selectors": [
+    "#zzbang_div",
+    "#ad_nv_slot",
+    "#focus_cmt li.dory",
+    "#focus_cmt li.power_link"
+   ],
+   "blur_selectors": [
+    ".view_content_wrap .gall_writer .nickname",
+    ".view_content_wrap .gall_writer .ip",
+    ".view_content_wrap .gall_writer img",
+    ".view_content_wrap .writer_nikcon",
+    ".view_comment .cmt_nickbox",
+    ".view_comment a.mention"
+   ],
+   "_comment_2": "댓글 목록은 #focus_cmt .comment_box (앞의 .view_comment 는 그림 댓글). 댓글 속 @닉네임(IP 앞자리) 멘션 a.mention 은 흐림, 댓글돌이(li.dory=뉴스 제목 광고)·파워링크(li.power_link)는 숨김."
+  },
+  "www.teamblind.com": {
+   "_comment": "로그인 없이 실제 글 페이지를 열어 확인한 선택자(PC 레이아웃, 뷰포트 1280, dsf 2). 글 머리: .article-view-head .name 안의 span.cp(회사)·마스킹 닉네임, h1 앞 회사 링크 a[href^=/kr/company/]. 댓글: .article-comments .wrap-comment/.wrap-reply 의 p.name (a.point=회사, 그 뒤 마스킹 닉네임). 본문/댓글 광고: ul.tag-actions(쿠팡), 댓글 사이 쿠팡 줄. 닉네임·회사명은 읽지도 저장하지도 않고 화면에서만 가린다. 댓글은 로그인 없이 서버가 그려 준 일부(더보기 전)만 보인다.",
+   "verified_on": "2026-11-02",
+   "verified_urls": [
+    "https://www.teamblind.com/kr/topics/토픽-베스트"
+   ],
+   "clip_selectors": [
+    ".article-view-head",
+    ".article-view-contents",
+    ".article-comments"
+   ],
+   "ad_selectors": [
+    "ul.tag-actions",
+    ".article-view .ad_coupang_rwd",
+    ".article-comments .wrap-comment.ad_comment",
+    ".article-comments .brandad"
+   ],
+   "blur_selectors": [
+    ".article-view-head .name",
+    ".article-view-head .name .cp",
+    ".article-view-head h1 a[href^=\"/kr/company/\"]",
+    ".article-comments .wrap-comment > p.name",
+    ".article-comments .wrap-reply > p.name",
+    ".article-comments p.name a.point"
+   ]
+  }
+ }
+}

@@ -1,0 +1,66 @@
+{
+ "items": [
+  {
+   "sentence": 6,
+   "name_ko": "느티",
+   "name_en": "Neuti",
+   "name_ja": "ヌティ",
+   "kind": "character",
+   "real_person": false,
+   "query_hints": [
+    "캐릭터"
+   ],
+   "why": "표절 논란 비교"
+  },
+  {
+   "sentence": 2,
+   "name_ko": "달래",
+   "name_en": "",
+   "name_ja": "",
+   "kind": "character",
+   "real_person": false,
+   "query_hints": [],
+   "why": "이미 캡처에 있음"
+  },
+  {
+   "sentence": 3,
+   "name_ko": "억쇠",
+   "name_en": "Eoksoe",
+   "name_ja": "",
+   "kind": "person",
+   "real_person": true,
+   "query_hints": [],
+   "why": "옛이야기 인물"
+  },
+  {
+   "sentence": 99,
+   "name_ko": "없는문장",
+   "name_en": "",
+   "name_ja": "",
+   "kind": "place",
+   "real_person": false,
+   "query_hints": [],
+   "why": ""
+  },
+  {
+   "sentence": 5,
+   "name_ko": "이상한종류",
+   "name_en": "",
+   "name_ja": "",
+   "kind": "thing",
+   "real_person": false,
+   "query_hints": [],
+   "why": ""
+  },
+  {
+   "sentence": 6,
+   "name_ko": "느티",
+   "name_en": "",
+   "name_ja": "",
+   "kind": "character",
+   "real_person": false,
+   "query_hints": [],
+   "why": "중복"
+  }
+ ]
+}

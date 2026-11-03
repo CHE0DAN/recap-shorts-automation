@@ -1,0 +1,28 @@
+{
+  "_comment": "도메인 -> 언론사명. 확실한 것만 적음. 목록에 없으면 도메인을 그대로 씀. 하위 도메인은 접미사로 맞춤.",
+  "domains": {
+    "yna.co.kr": "연합뉴스",
+    "newsis.com": "뉴시스",
+    "news1.kr": "뉴스1",
+    "chosun.com": "조선일보",
+    "joongang.co.kr": "중앙일보",
+    "donga.com": "동아일보",
+    "hani.co.kr": "한겨레",
+    "khan.co.kr": "경향신문",
+    "hankyung.com": "한국경제",
+    "mk.co.kr": "매일경제",
+    "edaily.co.kr": "이데일리",
+    "sedaily.com": "서울경제",
+    "heraldcorp.com": "헤럴드경제",
+    "fnnews.com": "파이낸셜뉴스",
+    "asiae.co.kr": "아시아경제",
+    "etnews.com": "전자신문",
+    "zdnet.co.kr": "지디넷코리아",
+    "ytn.co.kr": "YTN",
+    "kbs.co.kr": "KBS",
+    "imnews.imbc.com": "MBC",
+    "sbs.co.kr": "SBS",
+    "mbn.co.kr": "MBN",
+    "jtbc.co.kr": "JTBC"
+  }
+}
